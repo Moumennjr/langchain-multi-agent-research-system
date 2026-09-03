@@ -1,3 +1,10 @@
-from src.tools.tools import web_search
+from src.tools.tools import web_search, scrape_url
+from rich import print
 
-web_search("What is the capital of france ?")
+
+
+
+r = web_search.invoke("latest advancements in AI research")
+
+
+print(r)
