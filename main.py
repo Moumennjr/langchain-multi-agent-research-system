@@ -1,10 +1,9 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 from rich import print
 
 
 
+topic = "The impact of AI on the job market in the next decade"
 
-r = web_search.invoke("latest advancements in AI research")
 
-
-print(r)
+run_research_pipeline(topic)
